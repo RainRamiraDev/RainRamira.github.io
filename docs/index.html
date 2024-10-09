@@ -8,7 +8,7 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/pageicon.svg" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
@@ -54,37 +54,34 @@
   </head>
 
   <body class="index-page">
-    <header
-      id="header"
-      class="header d-flex flex-column justify-content-center"
-    >
+    <header id="header" class="header d-flex flex-column justify-content-center">
       <i class="header-toggle d-xl-none bi bi-list"></i>
-
+  
       <nav id="navmenu" class="navmenu">
         <ul>
           <li>
-            <a href="#hero" class="active"
+            <a href="#hero" id="menuInicio" class="active"
               ><i class="bi bi-house navicon"></i><span>Inicio</span></a
             >
           </li>
           <li>
-            <a href="#about"
+            <a href="#about" id="menuSobreMi"
               ><i class="bi bi-person navicon"></i><span>Sobre mí</span></a
             >
           </li>
           <li>
-            <a href="#resume"
+            <a href="#resume" id="menuCurriculum"
               ><i class="bi bi-file-earmark-text navicon"></i
               ><span>Curriculum</span></a
             >
           </li>
           <li>
-            <a href="#portfolio"
+            <a href="#portfolio" id="menuPortfolio"
               ><i class="bi bi-images navicon"></i><span>Portfolio</span></a
             >
           </li>
           <li>
-            <a href="#contact"
+            <a href="#contact" id="menuContacto"
               ><i class="bi bi-envelope navicon"></i><span>Contacto</span></a
             >
           </li>
@@ -92,33 +89,33 @@
       </nav>
     </header>
 
-    <main class="main">
-      <!-- Hero Section -->
-      <section id="hero" class="hero section light-background">
-        <img src="assets/img/gif2.gif" alt="GIF representativo" class="hero-gif" />
-      
-        <div class="container" data-aos="zoom-out">
+     <!-- Hero Section -->
+     <section id="hero" class="hero section light-background">
+      <img src="assets/img/gif2.gif" alt="GIF representativo" class="hero-gif" />
+  
+      <div class="container" data-aos="zoom-out">
           <div class="row justify-content-center">
-            <div class="col-lg-9 text-center">
-              <h2>Rain Ramira</h2>
-              <p>
-                Desarrollador
-                <span class="typed" data-typed-items="BackEnd, FrontEnd, FullStack"></span>
-                <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
-              </p>
-      
-              <div class="social-links">
-                <a href="https://github.com/RainRamira" aria-label="Github"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/rramira/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <div class="col-lg-9 text-center">
+                  <h2 id="nombre">Rain Ramira</h2>
+                  <p>
+                      <span id="descripcion">Desarrollador</span>
+                      <span class="typed" data-typed-items="BackEnd, FrontEnd, FullStack"></span>
+                      <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+                  </p>
+  
+                  <div class="social-links">
+                      <a href="https://github.com/RainRamira" aria-label="Github"><i class="bi bi-github"></i></a>
+                      <a href="https://www.linkedin.com/in/rramira/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  </div>
               </div>
-            </div>
           </div>
-        </div>
-      </section>
+      </div>
+  </section>
       
-  <!-- /Hero Section -->
-      </section>
+      
 
+
+  <!-- /Hero Section -->
       <!-- About Section -->
       <section id="about" class="about section">
         <!-- Section Title -->
@@ -270,7 +267,7 @@
       
             <div class="col-lg-2 col-md-4 d-flex align-items-center justify-content-center">
               <div class="skill-icon">
-                <img src="https://img.icons8.com/color/48/microsoft-sql-server.png" alt="SQL Server Icon" class="icon-img" />
+                <img src="./assets/img/icon/newsqlserver.svg" alt="SQL Server Icon" class="icon-img" />
               </div>
             </div>
       
@@ -389,106 +386,104 @@
       <!-- /Resume Section -->
 
       <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p>
-            Explora algunos de mis proyectos destacados, donde he aplicado mis
-            habilidades en desarrollo web para crear soluciones innovadoras y
-            escalables.
-          </p>
-        </div>
-        <!-- End Section Title -->
+<section id="portfolio" class="portfolio section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>
+      Explora algunos de mis proyectos destacados, donde he aplicado mis
+      habilidades en desarrollo web para crear soluciones innovadoras y
+      escalables.
+    </p>
+  </div>
+  <!-- End Section Title -->
 
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div
-            id="portfolioCarousel"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner">
-              <!-- Carousel Item 1 -->
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                      <a
-                        href="https://github.com/RainRamira/Directorio-de-Peliculas"
-                        target="_blank"
-                      >
-                        <img
-                          src="assets/img/portfolio/movies.jpeg"
-                          class="card-img-top"
-                          alt="Directorio de Peliculas con API de The Movie Database (TMDB)"
-                        />
-                      </a>
-                      <div class="card-body">
-                        <h5 class="card-title">Directorio de Peliculas</h5>
-                        <p class="card-text">
-                          Este proyecto permite a los usuarios buscar y ver
-                          películas utilizando la API de The Movie Database
-                          (TMDB).
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                      <a
-                        href="https://github.com/RainRamira/software-de-gesti-n-de-ventas"
-                        target="_blank"
-                      >
-                        <img
-                          src="assets/img/portfolio/farmacia.jpeg"
-                          class="card-img-top"
-                          alt="Sistema POS para Farmacia"
-                        />
-                      </a>
-                      <div class="card-body">
-                        <h5 class="card-title">Sistema POS para Farmacia</h5>
-                        <p class="card-text">
-                          Un sistema de punto de venta diseñado para optimizar
-                          las operaciones de una farmacia.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Agrega más proyectos aquí si es necesario -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div
+      id="portfolioCarousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <!-- Carousel Item 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="https://github.com/RainRamira/Directorio-de-Peliculas" target="_blank">
+                  <img src="assets/img/portfolio/movies.jpeg" class="card-img-top" alt="Directorio de Peliculas con API de The Movie Database (TMDB)" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Directorio de Peliculas</h5>
+                  <p class="card-text">
+                    Este proyecto permite a los usuarios buscar y ver
+                    películas utilizando la API de The Movie Database
+                    (TMDB).
+                  </p>
                 </div>
               </div>
             </div>
 
-            <!-- Controles del carrusel -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#portfolioCarousel"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#portfolioCarousel"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href="https://github.com/RainRamira/software-de-gesti-n-de-ventas" target="_blank">
+                  <img src="assets/img/portfolio/farmacia.jpeg" class="card-img-top" alt="Sistema POS para Farmacia" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Sistema POS para Farmacia</h5>
+                  <p class="card-text">
+                    Un sistema de punto de venta (POS) diseñado específicamente para optimizar las operaciones diarias de una farmacia. 
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card h-100">
+                <a href=https://github.com/RainRamiraDev/GestionDeUsuarios-App/tree/main target="_blank">
+                  <img src="assets/img/portfolio/Gestion de usuarios.jpeg" class="card-img-top" alt="API de gestion de usuarios" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">API de gestión de usuarios</h5>
+                  <p class="card-text">
+                    Sistema de gestión y manejo de perfiles de usuario. Esta API permite la creación, lectura, actualización y eliminación de usuarios, facilitando la administración de datos de acceso y perfiles en diversas aplicaciones.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Agrega más proyectos aquí si es necesario -->
           </div>
         </div>
-        <!-- End Container -->
-      </section>
-      <!-- /Portfolio Section -->
+        <!-- Más elementos del carrusel pueden ser añadidos aquí -->
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#portfolioCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#portfolioCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+  <!-- End Container -->
+</section>
+<!-- /Portfolio Section -->
+
 
 <!-- Contact Section -->
 <section id="contact" class="contact section">
@@ -517,7 +512,7 @@
       <!-- Teléfono de contacto -->
       <div class="col-lg-4 col-md-6">
         <div class="info-item d-flex align-items-center justify-content-start" data-aos="fade-up" data-aos-delay="300">
-          <a href="https://wa.me/5103516652252" target="_blank" class="d-flex align-items-center">
+          <a href="https://wa.me/5403516652252" target="_blank" class="d-flex align-items-center">
             <i class="bi bi-telephone flex-shrink-0 fs-3 me-3"></i>
             <div>
               <h3 class="mb-1">Contáctame</h3>
@@ -528,19 +523,20 @@
         <!-- End Info Item -->
       </div>
 
-      <!-- Email de contacto -->
-      <div class="col-lg-4 col-md-12">
-        <div class="info-item d-flex align-items-center justify-content-start" data-aos="fade-up" data-aos-delay="400">
-          <a href="mailto:r.sannarain@gmail.com?subject=Asunto%20del%20mensaje&body=Escribe%20tu%20mensaje%20aqui" class="d-flex align-items-center">
-            <i class="bi bi-envelope flex-shrink-0 fs-3 me-3"></i>
-            <div>
-              <h3 class="mb-1">Email</h3>
-              <p class="mb-0">r.sannarain@gmail.com</p>
-            </div>
-          </a>
-        </div>
-        <!-- End Info Item -->
+   <!-- Email de contacto a través de Gmail -->
+<div class="col-lg-4 col-md-12">
+  <div class="info-item d-flex align-items-center justify-content-start" data-aos="fade-up" data-aos-delay="400">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=r.sannarain@gmail.com&su=Asunto%20del%20mensaje&body=Escribe%20tu%20mensaje%20aqui" target="_blank" class="d-flex align-items-center">
+      <i class="bi bi-envelope flex-shrink-0 fs-3 me-3"></i>
+      <div>
+        <h3 class="mb-1">Email</h3>
+        <p class="mb-0">r.sannarain@gmail.com</p>
       </div>
+    </a>
+  </div>
+  <!-- End Info Item -->
+</div>
+
     </div>
   </div>
 </section>
@@ -585,13 +581,12 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/typed.js/typed.umd.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
